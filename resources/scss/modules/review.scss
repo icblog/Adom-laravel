@@ -7,6 +7,13 @@
   padding: 1rem;
   background-color: $lighterGreyColor;
 }
+.leave-review-btn{
+  background-color: $whiteColor;
+  color: $primaryColor;
+  font-weight: 500;
+  border-bottom: 0.2rem solid $primaryColor;
+ 
+}
 
 @media (max-width: 991.98px) {
 }

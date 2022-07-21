@@ -104,7 +104,7 @@
 </li>
 @endif
 <li class="hide-on-mobile">
-  <i class="fa fa-mobile-screen"></i> {{env('APP_CONTACT_NUMBER')}}
+<span class="hello-user"> <i class="fas fa-mobile-alt"></i></span> {{env('APP_CONTACT_NUMBER')}}
 </li>
 </ul>
 </div> <!-- End right-content-wrapper -->

@@ -15,11 +15,11 @@ class CreateReviewsTable extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
-            $table->integer('star',5)->nullable();
-            $table->text('comment',6000);
-            $table->integer('review_by',11);
-            $table->integer('reply_by',11)->nullable();
-            $table->integer('parent_id',11)->nullable();
+            $table->integer('star')->nullable();
+            $table->text('comment',7000);
+            $table->integer('review_by');
+            $table->integer('reply_by')->nullable();
+            $table->integer('parent_id')->nullable();
             $table->string('status')->default('Pending');
             $table->timestamps();
         });

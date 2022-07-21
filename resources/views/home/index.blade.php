@@ -99,7 +99,7 @@
        @include('work.work-card')
     <div class="row">
        <div class="mb-4 text-center col-md-12">
-        <a href="{{route('work.index')}}" class="view-more-link">Go to our work page >></a> 
+        <a href="{{route('work.index')}}" class="view-more-link">Show me more >></a> 
       </div>
      </div>
   </div>

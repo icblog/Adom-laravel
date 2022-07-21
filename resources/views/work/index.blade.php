@@ -4,8 +4,8 @@
 <section class="work">
   <div class="container-fluid">
     @include('layouts.page-intro')
-    <p class="text-center">We pride ourselves with what we do,below are some of our work samples click on image to enlarge.</p>
     @if(!$workData->isEmpty())
+    <p class="text-center">We pride ourselves with what we do, below are some of our work samples click on image to enlarge.</p>
      <!-- INCLUDE WORK CARD -->
     @include('work.work-card')
    <div class="row">
@@ -18,8 +18,8 @@
    </div>
    @else
    <div class="row">
-     <div class="text-enter col-md-12">
-       <p>There is no uploaded work</p>
+     <div class="col-md-12">
+       <p class="text-center">There is currently no uploaded work, please check back soon thank you.</p>
      </div>
    </div>
    @endif

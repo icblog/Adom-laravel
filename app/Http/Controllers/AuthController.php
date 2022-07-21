@@ -25,7 +25,7 @@ class AuthController extends Controller
      //Generate token
     $tokenData = array('email' => $email);
      $tk = $this->genarateToken(18000,$tokenData);//expire time in seconds(30mins)
-     $verifyLink = env('APP_URL', '')."/verify/".$tk."/".$action;
+     $verifyLink = env('APP_URL')."/verify/".$tk."/".$action;
      
      $dataArray = array(
          "name"=>"",

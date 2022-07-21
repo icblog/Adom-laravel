@@ -25,15 +25,15 @@
         take our words for it below are what some of
         our client say about us. If we've had the
         pleasure of doing business with you then
-        please
+        please click
 
         @if (Auth::check())
 
-        <button id="leave-review-btn" class="primary-btn" data-toggle="modal" data-target="#reviewModal">leave as a review</button>
+        <button id="leave-review-btn" class="leave-review-btn" data-toggle="modal" data-target="#reviewModal">here to review</button> us.
         
 
         @else
-        <button id="login-btn" class="primary-btn" data-toggle="modal" data-target="#authModal">login and review us</button>
+        <button id="login-btn" class="leave-review-btn" data-toggle="modal" data-target="#authModal">here to login</button> and review us.
         @endif
 
       </p>

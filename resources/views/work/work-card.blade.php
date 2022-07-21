@@ -2,7 +2,7 @@
       <div class="masonry">
        @foreach ($workData as $work)
        <div class="item">
-        <img src="{{$work->imgUrl}}" data-dir1="{{$work->imgUrl}}" class="work-img"/>
+        <img src="{{$work->img_url}}" data-dir1="{{$work->img_url}}" class="work-img"/>
        </div>
        @endforeach
      </div>

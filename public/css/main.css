@@ -841,6 +841,13 @@ footer {
   background-color: #f3f3f3;
 }
 
+.leave-review-btn {
+  background-color: #ffffff;
+  color: #bb7e04;
+  font-weight: 500;
+  border-bottom: 0.2rem solid #bb7e04;
+}
+
 @media (max-width: 767.98px) {
   .review-item-wrapper {
     margin-left: 0.8rem;
