@@ -11,7 +11,7 @@
        <div class="admin-work-item item">
         <button type="button" class="no-border-radius btn primary-btn admin-work-img-delete-btn" data-dir1="{{$work->id}}" data-dir2="{{$work->publicId}}"><span><i class="fa fa-trash"></i></span></button>
         <div class="delete-work-feedback"></div>
-        <img class="admin-work-img" src="{{$work->imgUrl}}" />
+        <img class="admin-work-img" src="{{$work->img_url}}" alt="Work image"/>
        </div>
        @endforeach
      </div>
