@@ -270,12 +270,12 @@ header .header-content-wrapper .middle-content-wrapper ul li a:hover {
 }
 
 header .header-content-wrapper .middle-content-wrapper .header-nav-link.active {
-  color: #000000;
+  color: #000000 !important;
   cursor: auto;
-  font-weight: 500;
 }
 header .header-content-wrapper .middle-content-wrapper .header-nav-link.active:hover {
-  font-weight: 500;
+  color: #000000 !important;
+  cursor: auto;
 }
 
 /* Right Nav Style */

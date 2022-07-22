@@ -1,7 +1,7 @@
 <li>
             <a
             href="{{route('home.index')}}"
-            class="header-nav-link"
+            class="header-nav-link {{ Route::currentRouteNamed('home.index') ? 'active' : '' }}"
             >
             Home
         </a>
@@ -10,13 +10,13 @@
         <a
 
         href="{{route('about.index')}}"
-        class="header-nav-link"
+        class="header-nav-link {{ Route::currentRouteNamed('about.index') ?  'active' : '' }}"
         >
-        About
+        About 
     </a>
 </li>
 <li>
-    <a href="{{route('work.index')}}" class="header-nav-link">
+    <a href="{{route('work.index')}}" class="header-nav-link {{ Route::currentRouteNamed('work.index') ? 'active' : '' }}">
         Our work
     </a>
 </li>
@@ -24,7 +24,7 @@
     <a
 
     href="{{route('review.index')}}"
-    class="header-nav-link"
+    class="header-nav-link {{ Route::currentRouteNamed('review.index') ? 'active' : '' }}"
     >
     Reviews
 </a>

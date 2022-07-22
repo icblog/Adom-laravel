@@ -10,7 +10,7 @@
     @include('work.work-card')
    <div class="row">
      <div class="col-md-12">
-       <div id="pagi-link-wrapper">
+     <div id="pagi-link-wrapper">
        {!! $workData->links() !!}
      </div>
        

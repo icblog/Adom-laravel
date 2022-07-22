@@ -97,11 +97,14 @@
      </div>
         <!-- INCLUDE WORK CARD -->
        @include('work.work-card')
-    <div class="row">
-       <div class="mb-4 text-center col-md-12">
-        <a href="{{route('work.index')}}" class="view-more-link">Show me more >></a> 
-      </div>
-     </div>
+       @if($workData->count() == 8)
+        <div class="row">
+          <div class="mb-4 text-center col-md-12">
+           <a href="{{route('work.index')}}" class="view-more-link">Show me more >></a> 
+        </div>
+       </div>
+       @endif
+
   </div>
 </section>
    @endif
@@ -119,13 +122,16 @@
      </div>
         <!-- INCLUDE review CARD -->
        @include('review.review-card')
-    <div class="row">
-       <div class="mb-4 text-center col-md-12">
-        <a href="{{route('review.index')}}" class="view-more-link">Go to our review page >></a> 
-      </div>
-     </div>
+       @if($reviewData->count() == 8)
+        <div class="row">
+          <div class="mb-4 text-center col-md-12">
+            <a href="{{route('review.index')}}" class="view-more-link">Go to our review page >></a> 
+          </div>
+        </div>
+     @endif
   </div>
 </section>
+
    @endif
 
 
