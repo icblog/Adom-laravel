@@ -190,6 +190,28 @@ const handleAdminDeleteWorkBtn = () => {
   });
 };
 
+
+const handleWorkImgClick = () => {
+  
+  $(".work-img").click(function () {
+    let imgUrl  = $(this).data("dir1"),
+        workModalImg =  $("#work-modal-img");
+        workModalImg.attr("src", imgUrl);
+        $("#workModal").modal("show");
+      
+   });
+
+  $("#workModal").on("shown.bs.modal", function(){
+    $('.modal-backdrop.show').css('opacity', '0.9');
+  });
+
+  $(".work-modal-img-close").on("click", function(){
+    $("#workModal").modal("hide");
+  });
+};
+
+
+
 $(function () {
   $(".input-images").imageUploader({
     imagesInputName: "files",
@@ -199,4 +221,8 @@ $(function () {
   handleSubmitWork();
   handleAdminImageHover();
   handleAdminDeleteWorkBtn();
+  handleWorkImgClick();
+ 
 });
+
+

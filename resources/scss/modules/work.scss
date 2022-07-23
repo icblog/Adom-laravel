@@ -1,5 +1,43 @@
-// =============ADMIN ADD WORK==========
+// ============= WORK ==================
 // =====================================
+#workModal .modal-dialog {
+	position: relative;
+	height: 100%;
+	padding-top: 4rem;
+	
+  }
+
+  #workModal .modal-dialog .modal-content{
+
+	background-color: transparent;
+  }
+
+
+
+.work-modal-img {
+	image-orientation: from-image;
+	text-align: center;
+    inset: 0;
+	margin: auto;
+}
+.work-modal-img-close{
+	position: absolute;
+	right:0;
+	z-index: 10;
+	border-radius: 50%;
+	cursor: pointer;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: $lightGreyColor;
+	font-size: 1.4rem;
+	&:hover{
+		background-color: $whiteColor;
+	}
+}
+
+
+// ============= ADMIN ADD WORK ==========
+// =======================================
 .input-images {
 	padding-top: 0.5rem;
 	cursor: pointer;
@@ -30,6 +68,11 @@
 }
 
 @media (max-width: 767.98px) {
+	// .work-modal-img-close{
+		
+	// 	top:6rem;
+		
+	// }
 }
 
 @media (max-width: 575.98px) {

@@ -1,6 +1,8 @@
 @extends("layouts.layout")
 @section("content")
 @section('title', 'our work')
+<!-- include work modal -->
+@include('work.work-modal')
 <section class="work">
   <div class="container-fluid">
     @include('layouts.page-intro')

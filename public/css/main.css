@@ -600,6 +600,38 @@ header .header-content-wrapper .right-content-wrapper .hello-user {
   padding-right: 2rem;
 }
 
+#workModal .modal-dialog {
+  position: relative;
+  height: 100%;
+  padding-top: 4rem;
+}
+
+#workModal .modal-dialog .modal-content {
+  background-color: transparent;
+}
+
+.work-modal-img {
+  image-orientation: from-image;
+  text-align: center;
+  inset: 0;
+  margin: auto;
+}
+
+.work-modal-img-close {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #e9e9e9;
+  font-size: 1.4rem;
+}
+.work-modal-img-close:hover {
+  background-color: #ffffff;
+}
+
 .input-images {
   padding-top: 0.5rem;
   cursor: pointer;
