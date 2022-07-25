@@ -64,7 +64,7 @@ const register1 = () => {
                         $(".form-top-text").show("slow");
                         regForm.slideDown("slow");
                         msg = data.error;
-                        errorElement = handleOutputInFo(msg, "error", true);
+                        errorElement = handleOutputInFo(msg, "error", false);
                         errDiv.html(errorElement).slideDown("slow");
 
                         handleErrorOnFocus();
